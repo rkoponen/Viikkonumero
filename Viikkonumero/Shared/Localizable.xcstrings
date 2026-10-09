@@ -1,0 +1,61 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Week %lld" : {
+      "comment" : "VoiceOver label for the week number, e.g. \"Week 41\". The placeholder is the week number.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Viikko %lld" } }
+      }
+    },
+    "Back to this week" : {
+      "comment" : "Accessibility label of the button that scrolls back to the current week.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Takaisin tähän viikkoon" } }
+      }
+    },
+    "%@–%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@–%2$@"
+          }
+        }
+      }
+    },
+    "Shows the current week number." : {
+      "comment" : "Description of the widget shown in the widget gallery.",
+      "localizations" : {
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näyttää nykyisen viikkonumeron."
+          }
+        }
+      }
+    },
+    "Week" : {
+      "comment" : "Label above the current week number, e.g. \"Week 41\".",
+      "localizations" : {
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viikko"
+          }
+        }
+      }
+    },
+    "Week Number" : {
+      "comment" : "Name of the widget shown in the widget gallery.",
+      "localizations" : {
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Viikkonumero"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

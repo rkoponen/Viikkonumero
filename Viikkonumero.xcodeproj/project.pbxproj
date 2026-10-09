@@ -6,20 +6,107 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E2D1B91530781B1C00B70A6E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D1B91430781B1C00B70A6E /* WidgetKit.framework */; };
+		E2D1B91730781B1C00B70A6E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D1B91630781B1C00B70A6E /* SwiftUI.framework */; };
+		E2D1B92230781B1E00B70A6E /* ViikkonumeroWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E2D1B91230781B1C00B70A6E /* ViikkonumeroWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2D1B92030781B1E00B70A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D1B8F13078134000B70A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D1B91130781B1C00B70A6E;
+			remoteInfo = ViikkonumeroWidgetExtension;
+		};
+		E2F1D33E30796BE200FDCB22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D1B8F13078134000B70A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D1B8F83078134000B70A6E;
+			remoteInfo = Viikkonumero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2D1B92730781B1E00B70A6E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				E2D1B92230781B1E00B70A6E /* ViikkonumeroWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E2D1B8F93078134000B70A6E /* Viikkonumero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viikkonumero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D1B91230781B1C00B70A6E /* ViikkonumeroWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ViikkonumeroWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D1B91430781B1C00B70A6E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E2D1B91630781B1C00B70A6E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E2F1D33A30796BE200FDCB22 /* ViikkonumeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViikkonumeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E2D1B92330781B1E00B70A6E /* Exceptions for "ViikkonumeroWidget" folder in "ViikkonumeroWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E2D1B91130781B1C00B70A6E /* ViikkonumeroWidgetExtension */;
+		};
+		E2D1B9A030781B1E00B70A6E /* Exceptions for "Viikkonumero" folder in "ViikkonumeroWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				ContentView.swift,
+				ViikkonumeroApp.swift,
+				WeekCarouselView.swift,
+			);
+			target = E2D1B91130781B1C00B70A6E /* ViikkonumeroWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E2D1B8FB3078134000B70A6E /* Viikkonumero */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E2D1B9A030781B1E00B70A6E /* Exceptions for "Viikkonumero" folder in "ViikkonumeroWidgetExtension" target */,
+			);
 			path = Viikkonumero;
+			sourceTree = "<group>";
+		};
+		E2D1B91830781B1C00B70A6E /* ViikkonumeroWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E2D1B92330781B1E00B70A6E /* Exceptions for "ViikkonumeroWidget" folder in "ViikkonumeroWidgetExtension" target */,
+			);
+			path = ViikkonumeroWidget;
+			sourceTree = "<group>";
+		};
+		E2F1D33B30796BE200FDCB22 /* ViikkonumeroTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViikkonumeroTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E2D1B8F63078134000B70A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E2D1B90F30781B1C00B70A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				E2D1B91730781B1C00B70A6E /* SwiftUI.framework in Frameworks */,
+				E2D1B91530781B1C00B70A6E /* WidgetKit.framework in Frameworks */,
+			);
+		};
+		E2F1D33730796BE200FDCB22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -31,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				E2D1B8FB3078134000B70A6E /* Viikkonumero */,
+				E2D1B91830781B1C00B70A6E /* ViikkonumeroWidget */,
+				E2F1D33B30796BE200FDCB22 /* ViikkonumeroTests */,
+				E2D1B91330781B1C00B70A6E /* Frameworks */,
 				E2D1B8FA3078134000B70A6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,8 +129,19 @@
 			isa = PBXGroup;
 			children = (
 				E2D1B8F93078134000B70A6E /* Viikkonumero.app */,
+				E2D1B91230781B1C00B70A6E /* ViikkonumeroWidgetExtension.appex */,
+				E2F1D33A30796BE200FDCB22 /* ViikkonumeroTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E2D1B91330781B1C00B70A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D1B91430781B1C00B70A6E /* WidgetKit.framework */,
+				E2D1B91630781B1C00B70A6E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,8 +154,12 @@
 				E2D1B8F53078134000B70A6E /* Sources */,
 				E2D1B8F63078134000B70A6E /* Frameworks */,
 				E2D1B8F73078134000B70A6E /* Resources */,
+				E2D1B92730781B1E00B70A6E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
+			);
+			dependencies = (
+				E2D1B92130781B1E00B70A6E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E2D1B8FB3078134000B70A6E /* Viikkonumero */,
@@ -63,6 +168,46 @@
 			productName = Viikkonumero;
 			productReference = E2D1B8F93078134000B70A6E /* Viikkonumero.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E2D1B91130781B1C00B70A6E /* ViikkonumeroWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D1B92430781B1E00B70A6E /* Build configuration list for PBXNativeTarget "ViikkonumeroWidgetExtension" */;
+			buildPhases = (
+				E2D1B90E30781B1C00B70A6E /* Sources */,
+				E2D1B90F30781B1C00B70A6E /* Frameworks */,
+				E2D1B91030781B1C00B70A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				E2D1B8FB3078134000B70A6E /* Viikkonumero */,
+				E2D1B91830781B1C00B70A6E /* ViikkonumeroWidget */,
+			);
+			name = ViikkonumeroWidgetExtension;
+			productName = ViikkonumeroWidgetExtension;
+			productReference = E2D1B91230781B1C00B70A6E /* ViikkonumeroWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E2F1D33930796BE200FDCB22 /* ViikkonumeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2F1D34230796BE200FDCB22 /* Build configuration list for PBXNativeTarget "ViikkonumeroTests" */;
+			buildPhases = (
+				E2F1D33630796BE200FDCB22 /* Sources */,
+				E2F1D33730796BE200FDCB22 /* Frameworks */,
+				E2F1D33830796BE200FDCB22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2F1D33F30796BE200FDCB22 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E2F1D33B30796BE200FDCB22 /* ViikkonumeroTests */,
+			);
+			name = ViikkonumeroTests;
+			productName = ViikkonumeroTests;
+			productReference = E2F1D33A30796BE200FDCB22 /* ViikkonumeroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -76,6 +221,13 @@
 				TargetAttributes = {
 					E2D1B8F83078134000B70A6E = {
 						CreatedOnToolsVersion = 27.0;
+					};
+					E2D1B91130781B1C00B70A6E = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					E2F1D33930796BE200FDCB22 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = E2D1B8F83078134000B70A6E;
 					};
 				};
 			};
@@ -94,12 +246,24 @@
 			projectRoot = "";
 			targets = (
 				E2D1B8F83078134000B70A6E /* Viikkonumero */,
+				E2D1B91130781B1C00B70A6E /* ViikkonumeroWidgetExtension */,
+				E2F1D33930796BE200FDCB22 /* ViikkonumeroTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E2D1B8F73078134000B70A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E2D1B91030781B1C00B70A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E2F1D33830796BE200FDCB22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -112,7 +276,30 @@
 			files = (
 			);
 		};
+		E2D1B90E30781B1C00B70A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		E2F1D33630796BE200FDCB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2D1B92130781B1E00B70A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D1B91130781B1C00B70A6E /* ViikkonumeroWidgetExtension */;
+			targetProxy = E2D1B92030781B1E00B70A6E /* PBXContainerItemProxy */;
+		};
+		E2F1D33F30796BE200FDCB22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D1B8F83078134000B70A6E /* Viikkonumero */;
+			targetProxy = E2F1D33E30796BE200FDCB22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E2D1B9023078134200B70A6E /* Debug configuration for PBXProject "Viikkonumero" */ = {
@@ -236,6 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCRQH66NYP;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -252,22 +440,19 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkoponen.Viikkonumero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 27.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -278,6 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCRQH66NYP;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -294,22 +480,134 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkoponen.Viikkonumero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 27.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2D1B92530781B1E00B70A6E /* Debug configuration for PBXNativeTarget "ViikkonumeroWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCRQH66NYP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ViikkonumeroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ViikkonumeroWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkoponen.Viikkonumero.ViikkonumeroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2D1B92630781B1E00B70A6E /* Release configuration for PBXNativeTarget "ViikkonumeroWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCRQH66NYP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ViikkonumeroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ViikkonumeroWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkoponen.Viikkonumero.ViikkonumeroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2F1D34030796BE200FDCB22 /* Debug configuration for PBXNativeTarget "ViikkonumeroTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCRQH66NYP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkoponen.ViikkonumeroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viikkonumero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Viikkonumero";
+			};
+			name = Debug;
+		};
+		E2F1D34130796BE200FDCB22 /* Release configuration for PBXNativeTarget "ViikkonumeroTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCRQH66NYP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkoponen.ViikkonumeroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viikkonumero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Viikkonumero";
 			};
 			name = Release;
 		};
@@ -329,6 +627,22 @@
 			buildConfigurations = (
 				E2D1B9053078134200B70A6E /* Debug configuration for PBXNativeTarget "Viikkonumero" */,
 				E2D1B9063078134200B70A6E /* Release configuration for PBXNativeTarget "Viikkonumero" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E2D1B92430781B1E00B70A6E /* Build configuration list for PBXNativeTarget "ViikkonumeroWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D1B92530781B1E00B70A6E /* Debug configuration for PBXNativeTarget "ViikkonumeroWidgetExtension" */,
+				E2D1B92630781B1E00B70A6E /* Release configuration for PBXNativeTarget "ViikkonumeroWidgetExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E2F1D34230796BE200FDCB22 /* Build configuration list for PBXNativeTarget "ViikkonumeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F1D34030796BE200FDCB22 /* Debug configuration for PBXNativeTarget "ViikkonumeroTests" */,
+				E2F1D34130796BE200FDCB22 /* Release configuration for PBXNativeTarget "ViikkonumeroTests" */,
 			);
 			defaultConfigurationName = Release;
 		};
