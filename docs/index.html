@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viikkonumero — Support</title>
+<meta name="description" content="Support and privacy information for the Viikkonumero iOS app.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #1f8a8a;
+    --rule: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --fg: #f2f2f7;
+      --muted: #9a9aa0;
+      --accent: #4fd1c5;
+      --rule: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 0.25rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 0.5rem; }
+  .tagline { color: var(--muted); margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  section { border-top: 1px solid var(--rule); }
+  .contact { font-size: 1.1rem; }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 1rem; }
+  dd { margin: 0.15rem 0 0; color: var(--fg); }
+  footer { border-top: 1px solid var(--rule); margin-top: 2.5rem; padding-top: 1rem; color: var(--muted); font-size: 0.9rem; }
+  footer p { margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Viikkonumero</h1>
+    <p class="tagline">The current ISO week number, on your Home and Lock Screen.</p>
+  </header>
+
+  <section>
+    <h2>Support</h2>
+    <p>Need help, found a bug, or have a suggestion? Send me an email and I'll get back to you.</p>
+    <p class="contact"><a href="mailto:ruupert.koponen@gmail.com">ruupert.koponen@gmail.com</a></p>
+  </section>
+
+  <section>
+    <h2>Frequently asked</h2>
+    <dl>
+      <dt>How do I add the widget?</dt>
+      <dd>Long-press your Home Screen and tap <em>Edit → Add Widget</em>, then search for Viikkonumero and pick a size. For the Lock Screen, enter edit mode on your Lock Screen and add a widget there.</dd>
+
+      <dt>Which week numbering does the app use?</dt>
+      <dd>ISO&nbsp;8601: weeks run Monday to Sunday, and week&nbsp;1 is the week containing the year's first Thursday. This is the standard used in Finland and most of Europe.</dd>
+
+      <dt>The number doesn't match another app.</dt>
+      <dd>That app is probably counting weeks from Sunday. Viikkonumero always uses ISO week numbers, so it will match official calendars and Finnish week numbering.</dd>
+
+      <dt>Does the app collect any data?</dt>
+      <dd>No. Please see the <a href="privacy.html">privacy policy</a>.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>© 2026 Ruupert Koponen</p>
+  </footer>
+</main>
+</body>
+</html>
