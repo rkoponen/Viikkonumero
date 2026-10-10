@@ -16,10 +16,6 @@ struct WeekWidgetView: View {
                     .font(.system(.title, design: .rounded, weight: .semibold))
                     .minimumScaleFactor(0.5)
             }
-        case .accessoryRectangular:
-            Text("Week \(entry.week.weekNumber)")
-                .font(.title2.weight(.semibold))
-                .frame(maxWidth: .infinity, alignment: .leading)
         case .accessoryInline:
             Text("Week \(entry.week.weekNumber)")
         default:

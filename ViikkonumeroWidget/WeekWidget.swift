@@ -15,6 +15,6 @@ struct WeekWidget: Widget {
     }
 
     private static var families: [WidgetFamily] {
-        [.systemSmall, .accessoryCircular, .accessoryRectangular, .accessoryInline]
+        [.systemSmall, .accessoryCircular, .accessoryInline]
     }
 }
