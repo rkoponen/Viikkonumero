@@ -21,7 +21,7 @@ struct AboutView: View {
                     }
                 }
             }
-            .navigationTitle("Viikkonumero")
+            .navigationTitle(Text(verbatim: "Viikkonumero"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
