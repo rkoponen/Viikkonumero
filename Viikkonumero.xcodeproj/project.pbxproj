@@ -60,6 +60,7 @@
 		E2D1B9A030781B1E00B70A6E /* Exceptions for "Viikkonumero" folder in "ViikkonumeroWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				AboutView.swift,
 				Assets.xcassets,
 				ContentView.swift,
 				ViikkonumeroApp.swift,

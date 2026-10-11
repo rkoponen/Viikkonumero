@@ -55,6 +55,36 @@
           }
         }
       }
+    },
+    "About" : {
+      "comment" : "Accessibility label of the button that opens the app information sheet.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Tietoja" } }
+      }
+    },
+    "Done" : {
+      "comment" : "Button that dismisses the app information sheet.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Valmis" } }
+      }
+    },
+    "Privacy Policy" : {
+      "comment" : "Link to the privacy policy in the app information sheet.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Tietosuojakäytäntö" } }
+      }
+    },
+    "Support" : {
+      "comment" : "Link to the support page in the app information sheet.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Tuki" } }
+      }
+    },
+    "Version" : {
+      "comment" : "Row label showing the app's version number in the app information sheet.",
+      "localizations" : {
+        "fi" : { "stringUnit" : { "state" : "translated", "value" : "Versio" } }
+      }
     }
   },
   "version" : "1.0"
