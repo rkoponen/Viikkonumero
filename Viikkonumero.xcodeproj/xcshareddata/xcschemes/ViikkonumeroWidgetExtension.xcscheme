@@ -31,6 +31,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E2D1B8F83078134000B70A6E"
                BuildableName = "Viikkonumero.app"
+               BlueprintName = "Viikkonumero"
                ReferencedContainer = "container:Viikkonumero.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -74,6 +75,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D1B8F83078134000B70A6E"
             BuildableName = "Viikkonumero.app"
+            BlueprintName = "Viikkonumero"
             ReferencedContainer = "container:Viikkonumero.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -109,6 +111,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D1B8F83078134000B70A6E"
             BuildableName = "Viikkonumero.app"
+            BlueprintName = "Viikkonumero"
             ReferencedContainer = "container:Viikkonumero.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
